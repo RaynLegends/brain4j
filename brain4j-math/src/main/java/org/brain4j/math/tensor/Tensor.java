@@ -229,6 +229,7 @@ public interface Tensor extends Iterable<Float> {
     
     //=============================================================
     // Statistical operations
+    // Statistical operations
     //=============================================================
 
     double sum();
@@ -246,6 +247,7 @@ public interface Tensor extends Iterable<Float> {
     
     Tensor reshape(int... newShape);
     Tensor view(int... newShape);
+
     Tensor permute(int... dims);
     Tensor squeeze();
     Tensor squeeze(int dim);
